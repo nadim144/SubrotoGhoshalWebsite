@@ -11,13 +11,6 @@
     /* height: 774px; */
     background: linear-gradient(to bottom, rgb(200, 186, 236), rgb(235, 234, 238));
 }
-
-.BannerAccordian{
-    /* position: sticky;
-    left: 0px;
-    top: 0px; */
-}
-
 .banner{
     width: 100%;
     height: 40px;
@@ -229,9 +222,10 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to left, #33A727, #7FCC61);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    font-family: cursive, sans-serif;
+    /* font-family: cursive, sans-serif; */
+    font-family: 'Rye', cursive;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
