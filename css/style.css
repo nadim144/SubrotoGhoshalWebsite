@@ -281,6 +281,14 @@
     padding-top: 10px;
 }
 
+.textboxinner h5{
+    font-family: Calibri;
+    font-size: 22px;
+    font-weight: bolder;
+    display: block;
+    padding-top: 10px;
+}
+
 .textboxinner p{
     display: block;
     padding-top: 8px;
@@ -370,6 +378,28 @@
     padding-left: 280px;
 }
 
+.cartooncontainer{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cartoonbox{
+    border: 1px solid black;
+    height: 200px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cartoonbox img{
+    height: 100%;
+    width: 100%;
+}
 
 /* About Area Ends */
 
@@ -554,5 +584,5 @@
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
-
 }
+
