@@ -1,0 +1,532 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.coantainer{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 774px; */
+    background: linear-gradient(to bottom, rgb(200, 186, 236), rgb(235, 234, 238));
+}
+
+.BannerAccordian{
+    /* position: sticky;
+    left: 0px;
+    top: 0px; */
+}
+
+.banner{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+.banner .bannerbox{
+    width: 50%;
+    height: 40px;
+}
+
+.bannerbox ul li {
+    position: relative;
+    right: 40px;
+    list-style: none;
+    float: right;
+    font-family: 'brandico', sans-serif;
+    padding:7px;
+    cursor: pointer;
+    font-size:25px
+}
+.bannerbox ul li a{
+    color: rgb(255, 255, 255);
+}
+.bannerbox ul li a:hover{
+    text-shadow: -2px 6px 15px #ffffff;
+}
+
+.shadows {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: -2px;
+    padding-left: 20px;
+    /* padding-top: -10px; */
+    /* text-transform: uppercase; */
+    text-shadow: -15px 5px 20px #5981aa;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.04em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all 0.25s ease-out;
+}
+.shadows:hover {
+    text-shadow: -16px 6px 15px #ffffff;
+}
+
+
+.accordion{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    /* border-radius: 10px; */
+    position: sticky;
+    left: 0px;
+    top: 0px;
+}
+
+.accordion ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion ul li{
+    position: relative;
+    width: calc(100% / 5);
+    float: left;
+    transition: all 0.6s;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+
+.accordion ul:hover li{
+    width: calc((100% - 800px) / 4);
+    
+}
+
+.accordion ul li:hover{
+    width: 800px;
+}
+
+.accordion ul li a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: aliceblue; 
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Anton', Arial, sans-serif;
+}
+
+.sliderbox{
+    /* border: 5px solid blue; */
+    margin-top: 0px;
+    /* height: 320px; */
+}
+.outerbox{
+    width: 1000px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    margin: 2px auto;
+    /* border: 25px solid rgba(245, 169, 4, 0.404); */
+    border: 25px;
+    border-style: solid;
+    border-color:#353535 #FEC007 #FEC007 #353535;
+    border-style:outset;
+    border-radius: 8px;
+}
+.slider{
+    position: relative;
+    width: 5000px;
+    animation-name: Subrotoghoshalslider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.slider img{
+    float: left;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+
+@keyframes Subrotoghoshalslider{
+    15%{
+        left: 0px;
+    }20%{
+        left: -1000px;
+    }35%{
+        left: -1000px;
+    }40%{
+        left: -2000px;
+    }55%{
+        left: -2000px;
+    }60%{
+        left: -3000px;
+    }75%{
+        left: -3000px;
+    }80%{
+        left: -4000px;
+    }95%{
+        left: -4000px;
+    }100%{
+        left: 0px;
+    }
+}
+
+/* Animated profile box start here */
+.profilebox{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    /* border: 1px solid red; */
+
+}
+.profilebox .picbox{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profilebox .picbox img{
+    height: 100%;
+    width: 100%;
+}
+ .profilebox .picbox .inside{
+    height: 100%;
+    width: 100%;
+    border-width: 20px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: top right bottom left;
+    border-color:#353535 #FEC007 #FEC007 #353535;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-radius: 50%;
+    transition: transform 1s;
+    z-index: 10;
+}
+
+.profilebox .picbox:hover .inside{
+    transform: rotate(180deg);
+}
+
+.profilebox .picbox .text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #33A727, #7FCC61);
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.profilebox .picbox:hover .text{
+    opacity: 1;
+}
+/* Animated profile box ends here */
+/* ======================================================= */
+
+/* About Area start */
+.textboxouter{
+    /* height: 600px; */
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textboxinner{
+    width: 80%;
+    /* border: 1px solid green; */
+    /* height: 500px; */
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+}
+
+.textboxinner h3{
+    /* background-color: rgb(179, 179, 46); */
+    /* font-family: 'Satisfy', cursive; */
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+    font-size: 46px;
+    font-style: italic;
+    /* color: #FEC007; */
+    text-shadow: 10px 15px 20px #ffffff;
+}
+
+.subrotoname{
+    /* background-color: lawngreen; */
+    font-family: 'Monoton', cursive;
+    font-size: 26px;
+    color: black;
+}
+.subrotoborn{
+    font-family: Rockwell Condensed;
+    font-size: 20px;
+}
+
+.InspirationalQuots{
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bolder;
+    display: block;
+    padding-top: 10px;
+}
+.quotes{
+    display: block;
+    font-family: Calibri;
+    font-size: 18px;
+    /* background-color: cornsilk; */
+    padding-top: 5px;
+}
+.abotfranklin{
+    display: block;
+    padding-top: 8px;
+    font-family: Calibri;
+    font-style: italic;
+}
+.misguideme{
+    display: block;
+    padding-top: 15px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.inspiredme{
+    font-family: Calibri;
+    font-size: 23px;
+    font-weight: bolder;
+    display: block;
+    padding-top: 15px;
+}
+.lalutharoor{
+    display: block;
+    font-family: Rockwell Condensed;
+    font-size: 25px;
+    /* font-weight: bold; */
+    padding-top: 10px;
+}
+.lalutharoortext{
+    display: block;
+    padding-top: 8px;
+    font-family: Calibri;
+}
+.glassofwater{
+    display: block;
+    padding-top: 8px;
+    font-family: Calibri;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 280px;
+}
+
+/* About Area Ends */
+
+/* ====================================================== */
+
+/* Footer start here */
+.footer-distributed{
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 5px 15px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 50%;
+    /* border: 1px solid greenyellow; */
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 5px 0 5px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+    color:  inherit;
+    font-size: 13px;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 40%;
+    /* border: 1px solid white; */
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #f9fbfc;
+	color: #0509fcbb;
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 12px;
+    line-height: 30px;
+    padding-top: -25px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+    margin:0;
+    font-size: 12px;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:142x;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  rgb(255, 255, 255);
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 8%;
+    /* border: 1px solid yellow; */
+}
+
+.footer-distributed .footer-copyright{
+	line-height: 20px;
+	color:  #000000;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-copyright span{
+	display: block;
+	color:  #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
