@@ -12,11 +12,6 @@
     background: linear-gradient(to bottom, rgb(200, 186, 236), rgb(235, 234, 238));
 }
 
-.BannerAccordian{
-    /* position: sticky;
-    left: 0px;
-    top: 0px; */
-}
 
 .banner{
     width: 100%;
@@ -231,7 +226,7 @@
     background: linear-gradient(to left, #33A727, #7FCC61);
     color: white;
     font-size: 30px;
-    font-family: 'Oswald', sans-serif;
+    font-family: cursive, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
