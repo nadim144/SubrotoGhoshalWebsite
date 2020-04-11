@@ -55,8 +55,6 @@
     left: 0px;
     margin-top: -2px;
     padding-left: 20px;
-    /* padding-top: -10px; */
-    /* text-transform: uppercase; */
     text-shadow: -15px 5px 20px #5981aa;
     color: rgb(255, 255, 255);
     letter-spacing: -0.04em;
@@ -68,6 +66,7 @@
 }
 .shadows:hover {
     text-shadow: -16px 6px 15px #ffffff;
+    cursor: pointer;
 }
 
 
@@ -272,6 +271,36 @@
     text-shadow: 10px 15px 20px #ffffff;
 }
 
+.textboxinner h4{
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bolder;
+    display: block;
+    padding-top: 10px;
+}
+
+.textboxinner p{
+    display: block;
+    padding-top: 8px;
+    font-family: Calibri;
+    text-align: justify;
+}
+
+.textboxinner span{
+    display: block;
+    padding-bottom: 5px;
+}
+
+.glassofwatereducationcareer{
+    display: block;
+    padding-top: 8px;
+    font-family: Calibri;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 600px;
+}
+
 .subrotoname{
     /* background-color: lawngreen; */
     font-family: 'Monoton', cursive;
@@ -283,7 +312,7 @@
     font-size: 20px;
 }
 
-.InspirationalQuots{
+.InspirationalQuots {
     font-family: Calibri;
     font-size: 25px;
     font-weight: bolder;
@@ -338,6 +367,7 @@
     padding-bottom: 30px;
     padding-left: 280px;
 }
+
 
 /* About Area Ends */
 
